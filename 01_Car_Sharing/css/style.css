@@ -6,13 +6,14 @@
     box-sizing: border-box;
 }
 
-body * {
-    /* border: 1px dotted blue; */
-}
+/* body * {
+    border: 1px dotted blue;
+} */
 
 body {
     background-color: black;
     color: white;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 header {
@@ -23,20 +24,19 @@ header {
 }
 
 .nav-bar {
-    font-family: "Nunito Sans", sans-serif;
+   
     text-transform: uppercase;
     height: 93px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .nav-bar * {
     z-index: 100;
 }
 
-header::after {
+.nav-bar::after {
     content: "";
     background-color: rgba(0, 0, 0, .4);
     position: absolute;
@@ -91,4 +91,60 @@ header::after {
 
 .nav-list a:hover {
     background-color: rgba(255,255,255, 0.3);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(97vh - 93px);
+}
+
+.title {
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+.buttons {
+    font-size: 16px;
+}
+
+.button {
+    padding: 22px 55px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.button-alert {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.button-info {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.space-right {
+    margin-right: 25px;
+}
+
+.arrow {
+    width: 55px;
+    height: 55px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
 }
