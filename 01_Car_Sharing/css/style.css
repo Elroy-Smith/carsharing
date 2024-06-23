@@ -1,8 +1,53 @@
+:root {
+    --main-color: #FF0000;
+}
+
 * {
     box-sizing: border-box;
+}
+
+body * {
+    /* border: 1px dotted blue; */
 }
 
 body {
     background-color: black;
     color: white;
+}
+
+header {
+    height: 97vh;
+    background-image: url("../images/Image.jpg");
+    background-size: cover;
+}
+
+.nav-bar {
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 1088px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+.logo img {
+    height: 35px;
+    margin-right: 5px;
 }
